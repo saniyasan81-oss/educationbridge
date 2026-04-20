@@ -1,0 +1,96 @@
+<!-- problem.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Gap | The Problem</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="navbar-container"></div>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>The Education Crisis</h1>
+        <p>Understanding the scale and depth of the global learning divide</p>
+      </div>
+    </section>
+
+    <section class="problem-overview">
+      <div class="container">
+        <div class="problem-grid">
+          <div class="problem-text">
+            <h2>258 Million Children & Youth Are Out of School</h2>
+            <p>According to UNESCO, 258 million children, adolescents, and youth between the ages of 6 and 17 are not receiving any form of education. That's 1 in every 6 children worldwide.</p>
+            <p>Even among those who attend school, learning outcomes remain critically low. In low-income countries, nearly 90% of children cannot read and understand a simple text by age 10.</p>
+          </div>
+          <div class="problem-chart">
+            <img src="https://placehold.co/500x350/34495e/ffffff?text=Out+of+School+Statistics" alt="Global out of school chart">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="key-factors">
+      <div class="container">
+        <h2 class="section-title">Key Factors Driving the Gap</h2>
+        <div class="factors-grid">
+          <div class="factor-card">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>Economic Barriers</h3>
+            <p>School fees, uniforms, and supplies force families to choose between education and survival.</p>
+          </div>
+          <div class="factor-card">
+            <i class="fas fa-venus-mars"></i>
+            <h3>Gender Inequality</h3>
+            <p>Girls are disproportionately denied education, especially in regions with cultural barriers.</p>
+          </div>
+          <div class="factor-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Geographic Isolation</h3>
+            <p>Rural communities often have no schools within safe walking distance.</p>
+          </div>
+          <div class="factor-card">
+            <i class="fas fa-wheelchair"></i>
+            <h3>Disability Exclusion</h3>
+            <p>Children with disabilities are 49% more likely to never attend school.</p>
+          </div>
+          <div class="factor-card">
+            <i class="fas fa-fist-raised"></i>
+            <h3>Conflict & Displacement</h3>
+            <p>War and instability destroy school infrastructure and displace millions of students.</p>
+          </div>
+          <div class="factor-card">
+            <i class="fas fa-microphone-alt"></i>
+            <h3>Language Barriers</h3>
+            <p>Instruction in non-native languages leads to high dropout rates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callout">
+      <div class="container">
+        <blockquote>
+          "Education is the most powerful weapon which you can use to change the world." <br>— Nelson Mandela
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="js/script.js"></script>
+  <script>
+    fetch('components/navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-container').innerHTML = data);
+    fetch('components/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+</body>
+</html>

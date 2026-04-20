@@ -1,0 +1,94 @@
+<!-- solutions.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Gap | Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="navbar-container"></div>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Actionable Solutions</h1>
+        <p>Proven strategies to close the education gap — and how you can help</p>
+      </div>
+    </section>
+
+    <section class="solutions-list">
+      <div class="container">
+        <div class="solution-item">
+          <div class="solution-icon"><i class="fas fa-laptop"></i></div>
+          <div class="solution-content">
+            <h3>Digital Learning Hubs</h3>
+            <p>Solar-powered tablets and offline educational content bring schools to remote villages. Partner with local NGOs to deploy low-cost devices preloaded with curriculum.</p>
+          </div>
+        </div>
+        <div class="solution-item">
+          <div class="solution-icon"><i class="fas fa-chalkboard"></i></div>
+          <div class="solution-content">
+            <h3>Teacher Training & Support</h3>
+            <p>Online certification programs and mentorship for unqualified teachers. Mobile coaching apps help instructors improve literacy and numeracy instruction.</p>
+          </div>
+        </div>
+        <div class="solution-item">
+          <div class="solution-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <div class="solution-content">
+            <h3>Scholarship & Supply Drives</h3>
+            <p>Community-funded scholarships cover fees, uniforms, and books. School-in-a-box kits provide basic supplies for 40 students.</p>
+          </div>
+        </div>
+        <div class="solution-item">
+          <div class="solution-icon"><i class="fas fa-broadcast-tower"></i></div>
+          <div class="solution-content">
+            <h3>Radio & TV Education</h3>
+            <p>Interactive radio instruction (IRI) reaches millions in low-connectivity areas. Broadcast lessons in local languages at accessible times.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-cards">
+      <div class="container">
+        <h2 class="section-title">Ways To Take Action</h2>
+        <div class="action-cards">
+          <div class="action-card">
+            <i class="fas fa-donate"></i>
+            <h4>Donate</h4>
+            <p>$10 provides a month of digital learning for one child.</p>
+            <a href="#" class="btn-small">Donate Now</a>
+          </div>
+          <div class="action-card">
+            <i class="fas fa-users"></i>
+            <h4>Volunteer</h4>
+            <p>Teach online, mentor a student, or help with translation.</p>
+            <a href="contact.html" class="btn-small">Join Us</a>
+          </div>
+          <div class="action-card">
+            <i class="fas fa-bullhorn"></i>
+            <h4>Advocate</h4>
+            <p>Share our campaign, write to policymakers, raise awareness.</p>
+            <a href="#" class="btn-small">Spread the Word</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="js/script.js"></script>
+  <script>
+    fetch('components/navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-container').innerHTML = data);
+    fetch('components/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+</body>
+</html>

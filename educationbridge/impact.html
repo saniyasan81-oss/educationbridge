@@ -1,0 +1,95 @@
+<!-- impact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Gap | Our Impact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="navbar-container"></div>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Real Impact, Real Change</h1>
+        <p>See how our initiatives are transforming communities</p>
+      </div>
+    </section>
+
+    <section class="impact-numbers">
+      <div class="container">
+        <div class="impact-stat">
+          <h2><span class="counter" data-target="15000">0</span>+</h2>
+          <p>Students reached with learning materials</p>
+        </div>
+        <div class="impact-stat">
+          <h2><span class="counter" data-target="320">0</span></h2>
+          <p>New schools established</p>
+        </div>
+        <div class="impact-stat">
+          <h2><span class="counter" data-target="1250">0</span></h2>
+          <p>Teachers trained</p>
+        </div>
+        <div class="impact-stat">
+          <h2><span class="counter" data-target="8">0</span></h2>
+          <p>Countries with active programs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stories">
+      <div class="container">
+        <h2 class="section-title">Success Stories</h2>
+        <div class="story-grid">
+          <div class="story-card">
+            <img src="https://placehold.co/400x250/2c3e50/ffffff?text=Student+Story" alt="Student story">
+            <h3>Priya's Journey</h3>
+            <p>After dropping out at age 12, Priya joined our mobile learning program. Today, she's the first in her family to enroll in university.</p>
+          </div>
+          <div class="story-card">
+            <img src="https://placehold.co/400x250/2c3e50/ffffff?text=Rural+School" alt="Rural school">
+            <h3>School Reborn</h3>
+            <p>A dilapidated building in rural Kenya was transformed into a digital classroom hub serving 300+ children weekly.</p>
+          </div>
+          <div class="story-card">
+            <img src="https://placehold.co/400x250/2c3e50/ffffff?text=Teacher+Training" alt="Teacher training">
+            <h3>Empowered Teachers</h3>
+            <p>Our teacher fellowship in India led to a 40% improvement in literacy scores across 50 partner schools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-chart">
+      <div class="container">
+        <h2>Progress Over 5 Years</h2>
+        <div class="simple-chart">
+          <div class="bar-container">
+            <div class="bar-label">Students Enrolled</div>
+            <div class="bar" style="width: 45%">2019: 2,500</div>
+          </div>
+          <div class="bar-container">
+            <div class="bar-label">Current Enrollment</div>
+            <div class="bar" style="width: 100%">2025: 15,000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="js/script.js"></script>
+  <script>
+    fetch('components/navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-container').innerHTML = data);
+    fetch('components/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+</body>
+</html>

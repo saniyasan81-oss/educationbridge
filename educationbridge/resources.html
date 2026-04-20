@@ -1,0 +1,73 @@
+<!-- resources.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Gap | Resources</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="navbar-container"></div>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Knowledge & Toolkits</h1>
+        <p>Free resources for educators, parents, and advocates</p>
+      </div>
+    </section>
+
+    <section class="resources-library">
+      <div class="container">
+        <div class="resource-category">
+          <h2><i class="fas fa-download"></i> Downloadable Guides</h2>
+          <ul class="resource-list">
+            <li><a href="#">📘 Bridging the Gap: A School Leader's Handbook (PDF)</a></li>
+            <li><a href="#">📗 Remote Learning Toolkit for Low-Connectivity Areas</a></li>
+            <li><a href="#">📙 Gender-Responsive Teaching Strategies</a></li>
+          </ul>
+        </div>
+        <div class="resource-category">
+          <h2><i class="fas fa-link"></i> Partner Organizations</h2>
+          <ul class="resource-list">
+            <li><a href="#">UNESCO Global Education Monitoring Report</a></li>
+            <li><a href="#">World Bank: Education for All</a></li>
+            <li><a href="#">Teach For All Network</a></li>
+            <li><a href="#">Malala Fund</a></li>
+          </ul>
+        </div>
+        <div class="resource-category">
+          <h2><i class="fas fa-video"></i> Video Lessons (Open Access)</h2>
+          <ul class="resource-list">
+            <li><a href="#">Math Basics for Primary (Kiswahili/English)</a></li>
+            <li><a href="#">Science Experiments with Household Items</a></li>
+            <li><a href="#">Digital Literacy for Beginners</a></li>
+          </ul>
+        </div>
+        <div class="resource-category">
+          <h2><i class="fas fa-chart-simple"></i> Data & Research</h2>
+          <ul class="resource-list">
+            <li><a href="#">2025 Education Gap Index Report</a></li>
+            <li><a href="#">Cost-Benefit Analysis of Early Interventions</a></li>
+            <li><a href="#">Mapping Learning Poverty Hotspots</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="js/script.js"></script>
+  <script>
+    fetch('components/navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-container').innerHTML = data);
+    fetch('components/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+</body>
+</html>
